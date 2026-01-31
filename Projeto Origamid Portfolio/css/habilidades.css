@@ -1,0 +1,55 @@
+.habilidades {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 160px;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.habilidades h1 {
+    justify-self: center;
+    line-height: 1;
+}
+
+.habilidades p {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 24px;
+    justify-self: center;
+}
+
+.hard-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.skill-unica {
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 50px;
+}
+
+.vermelho {
+    color: #2c0707;
+    background-color: #d28f8f;
+}
+
+.azul {
+    color: #180d47;
+    background-color: #b0a7d8;
+}
+
+.verde {
+    color: #0c3a0f;
+    background-color: #afcc8c;
+}
+
+@media (max-width: 550px) {
+    .hard-skills {
+        gap: 0.5rem 0.75rem;
+    }
+}

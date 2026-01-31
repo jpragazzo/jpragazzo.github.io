@@ -1,0 +1,119 @@
+.introducao {
+    max-width: 1200px;
+    padding: 100px 60px 0px 60px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 6fr 6fr;
+}
+
+#introducao-texto {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    align-content: start;
+    text-align: start;
+    line-height: 1.1;
+}
+
+#introducao-imagem {
+    justify-self: center;
+    min-width: 200px;
+}
+
+#introducao-texto p {
+    color: var(--c3);
+    font-weight: 500;
+}
+
+#h1-1 {
+    position: relative;
+    text-wrap: wrap;
+    max-width: 470px;
+}
+
+#h1-1::before {
+    content: "";
+    position: absolute;
+    align-content: end;
+    align-self: center;
+    margin-left: -20px;
+    margin-top: 85px;
+    border-radius: 10px;
+    width: 6px;
+    height: 150px;
+    background: linear-gradient(#5737cf, #893ac5);
+}
+
+@media (max-width: 1200px) {
+    .introducao {
+        grid-template-columns: 5fr 7fr;
+    }
+
+    .introducao h1 {
+        font-size: 64px;
+    }
+
+    #h1-1::before {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao img {
+        order: 1;
+    }
+
+    #introducao-texto {
+        justify-self: center;
+        max-width: 500px;
+        order: -1;
+    }
+}
+
+@media (max-width: 550px) {
+    .introducao h1 {
+        font-size: 48px;
+    }
+
+    #introducao-texto {
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    #introducao-imagem {
+        width: 70%;
+    }
+
+    #h1-1 {
+        position: relative;
+        text-wrap: wrap;
+    }
+
+    #h1-1::before {
+        display: none;
+    }
+
+    #introducao-texto::before {
+        content: "";
+        position: absolute;
+        margin: 0px;
+        top: -10%;
+        width: 150px;
+        height: 6px;
+        border-radius: 12px;
+        background: linear-gradient(#5737cf, #893ac5);
+    }
+}
+
+@media (max-width: 360px) {
+    #h1-1 {
+        font-size: 36px;
+    }
+}
